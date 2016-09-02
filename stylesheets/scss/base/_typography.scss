@@ -1,0 +1,22 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 14px / 1.4 $text-font-stack;
+}
+
+h1, h2, h3, h4, h5, h6, .preview__title, .preview__score {
+  font-family: $title-font-stack;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+.text-monospaced {
+  font-family: $monospace-font-stack;
+}

@@ -1,0 +1,36 @@
+/* -------------------------------------- */
+/* Dashboard                              */
+/* -------------------------------------- */
+
+.explainer {
+    width: 100%;
+    background: #FFFFFF;
+}
+
+/* -------------------------------------- */
+/* Presence                               */
+/* -------------------------------------- */
+
+.field-presence-indicator {
+    height:30px;
+    color: $brand-color;
+    margin-bottom:3px;
+}
+
+/* -------------------------------------- */
+/* Explainer                              */
+/* -------------------------------------- */
+
+.explainer-input-field {
+    margin:0;
+    width: 100%;
+    font-size: 20px;
+    font-family: inherit;
+    line-height: 1.4em;
+    border:1px solid #DDDDDD;
+}
+
+.explainer__input {
+    height:300px;
+    padding: 6px;
+}
