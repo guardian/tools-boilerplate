@@ -5,7 +5,7 @@
   "main": "index.html",
   "author": "Shaun Dillon - The Guardian",
   "scripts": {
-    "sass": "node-sass --output-style=compressed stylesheets/scss -o stylesheets/main.css",
+    "sass": "node-sass stylesheets/scss/main.scss stylesheets/main.css",
     "less": "lessc stylesheets/less stylesheets/main.css"
   },
   "devDependencies": {
