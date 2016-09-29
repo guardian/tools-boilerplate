@@ -19,3 +19,23 @@ Pick the preprocessor of your choice, include that in your project and compile i
 The HTML serves as a guide for classnames, as well as semantic HTML and use of a11y roles.
 
 For more info on (very basic) a11y, visit [the a11y project](http://a11yproject.com/)
+
+## Structure and file description
+This is *only* intended as a kick-start to your project styles and structure - edit anything and everything as you wish.
+
+
+```
+.
+├── assets
+|   ├── fonts // font files
+|   |── images // all site images
+|   └── stylesheets
+|       |── less // .less files (same structure as .scss
+|       └── scss // .scss files
+|           |── abstracts // non-compiling files (variables, mixins, etc)
+|           |── base // top-level styles (body block, typography, helpers, etc)
+|           |── components // Small, generic, reusable blocks (buttons, forms, etc)
+|           |── layout // Page specific or larger components
+|           └──  vendor // 3rd party styles
+└── index.html // Basic HTML structure, open for styles preview
+```
