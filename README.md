@@ -30,7 +30,7 @@ This is *only* intended as a kick-start to your project styles and structure - e
 |   ├── fonts // font files
 |   |── images // all site images
 |   └── stylesheets
-|       └── scss // .scss files
+|       └── scss/less // .scss or .less files
 |           |── abstracts // non-compiling files (variables, mixins, etc)
 |           |── base // top-level styles (body block, typography, helpers, etc)
 |           |── components // Small, generic, reusable blocks (buttons, forms, etc)
@@ -38,7 +38,3 @@ This is *only* intended as a kick-start to your project styles and structure - e
 |           └──  vendor // 3rd party styles
 └── index.html // Basic HTML structure, open for styles preview
 ```
-
-## Coming soon
-
-- Less port
