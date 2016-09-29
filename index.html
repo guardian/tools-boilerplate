@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Tools boilerplate</title>
-  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="assets/stylesheets/main.css">
 </head>
 
 <body>
@@ -37,6 +37,16 @@
             <li class="toolbar__item toolbar__item--no-spacing main-nav__item">
               <a href="#" class="toolbar__button main-nav__link">Link 2</a>
             </li>
+            <li class="main-nav__item toolbar__item toolbar__item--no-spacing ">
+              <label class="toolbar__item__dropdown-label toolbar__button" >Toolbar dropdown
+                <select class="toolbar__item__dropdown">
+                  <option value="#">Option 1</option>
+                  <option value="#">Option 2</option>
+                  <option value="#">Option 3</option>
+                  <option value="#">Option 4</option>
+                </select>
+              </label>
+            </li>
           </ul>
         </nav>
         <button class="toolbar__item toolbar__button">Button</button>
@@ -53,7 +63,7 @@
 
           <div class="form__row">
             <label for="field1" class="form__label">Form label</label>
-            <input id="field1" type="text" class="form__field" placeholder="Text field">
+            <input id="field1" type="text" class="form__field" placeholder="Form fields will take up the width of their container">
           </div>
 
           <div class="form__row">

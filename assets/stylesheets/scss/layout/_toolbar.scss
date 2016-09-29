@@ -124,6 +124,37 @@ $toolbarHeight: 50px;
   }
 }
 
+// Dropdown select box
+.toolbar__item__dropdown-label {
+  display: block;
+  position: relative;
+
+  &:after {
+    content: " ";
+    background: url(../images/arrow.png) no-repeat right center;
+    background-size: 12px;
+    width: 17px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 15px;
+    pointer-events: none;
+  }
+}
+
+.toolbar__item__dropdown {
+  background-color: transparent;
+  font-weight: normal;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 16px 25px 17px 5px;
+  margin-left: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
 // Abstracted class to relate nav items
 .main-nav {
   flex-grow: 2;

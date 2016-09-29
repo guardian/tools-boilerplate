@@ -2,11 +2,15 @@
 // This file contains styles for all form elements
 // -----------------------------------------------------------------------------
 
-.form-row {
+.form {
+  display: block;
+}
+
+.form__row {
   margin-bottom: 20px;
 }
 
-.form-field {
+.form__field {
   background-color: $cWhite;
   padding: 11px;
   border: 1px solid #dcdcdc;
@@ -21,13 +25,20 @@
     outline: none;
   }
 
-  &--text-area {
-    min-height: 130px;
+  // Because select elements are THE WORST
+  &--select {
+    background: url(../images/arrow.png) $cWhite no-repeat right 10px center;
+    padding-right: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    text-indent: .01px;
+    text-overflow: '';
   }
 
 }
 
-.form-label {
+.form__label {
   display: block;
   font-size: 13px;
   font-weight: bold;

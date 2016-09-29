@@ -5,8 +5,8 @@
   "main": "index.html",
   "author": "Shaun Dillon - The Guardian",
   "scripts": {
-    "sass": "node-sass stylesheets/scss/main.scss stylesheets/main.css",
-    "less": "lessc stylesheets/less stylesheets/main.css"
+    "sass": "node-sass assets/stylesheets/scss/main.scss assets/stylesheets/main.css",
+    "less": "lessc assets/stylesheets/less assets/stylesheets/main.css"
   },
   "devDependencies": {
     "node-sass": "3.8.0",
