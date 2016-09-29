@@ -8,7 +8,7 @@
 
 .tag {
   padding: 5px 30px 5px 5px;
-  background: $mid-grey;
+  background: $color400Grey;
   font-size: 14px;
   position: relative;
   overflow: hidden;
@@ -29,7 +29,7 @@
 
 .tag__suggestions {
   border-top-width: 1px;
-  background-color: $text-contrast;
+  background-color: $cWhite;
   position: absolute;
   z-index: 1;
   font-size: 14px;
@@ -46,6 +46,6 @@
   cursor: pointer;
 
   &:hover {
-    background: $light-grey;
+    background: $color200Grey;
   }
 }

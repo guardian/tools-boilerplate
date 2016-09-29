@@ -14,12 +14,12 @@ button {
 .btn {
   display: block;
   padding: 10px;
-  background: $brand-color;
-  color: $text-contrast;
+  background: $darkBrandColor;
+  color: $cWhite;
   font-size: 12px;
   font-weight: bold;
 
   &:hover {
-    background: $brand-color-light;
+    background: $brandColor;
   }
 }

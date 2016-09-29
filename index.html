@@ -12,30 +12,61 @@
 
     <!-- Top toolbar -->
     <div class="toolbar">
-      <header class="logo toolbar__container" role="banner">
-        <a href="/" class="logo__link"></a>
+
+      <header class="toolbar__container">
+        <a class="toolbar__title" href="/">
+          <div class="toolbar__logo"></div>
+          <div class="toolbar__page-icon"></div>
+          <div class="toolbar__title__hover-state">
+            <span class="toolbar__title__hover-state__subtitle">Back to</span><br />
+            <span class="toolbar__title__hover-state__title">Dashboard</span>
+          </div>
+        </a>
       </header>
 
-      <nav class="toolbar__container" role="navigation">
-        <ul class="main-nav">
-          <li class="toolbar__item main-nav__item"><a href="#" class="main-nav__link">Link 1</a></li>
-          <li class="toolbar__item main-nav__item"><a href="#" class="main-nav__link">Link 2</a></li>
-          <li class="toolbar__item main-nav__item"><a href="#" class="main-nav__link">Link 3</a></li>
-        </ul>
-      </nav>
+
       <div class="toolbar__container">
+        <nav class="main-nav" role="navigation">
+          <ul class="main-nav__list">
+            <li class="toolbar__item main-nav__item">
+              Plain text
+            </li>
+            <li class="toolbar__item toolbar__item--no-spacing main-nav__item">
+              <a href="#" class="toolbar__button main-nav__link">Link 1</a>
+            </li>
+            <li class="toolbar__item toolbar__item--no-spacing main-nav__item">
+              <a href="#" class="toolbar__button main-nav__link">Link 2</a>
+            </li>
+          </ul>
+        </nav>
         <button class="toolbar__item toolbar__button">Button</button>
       </div>
     </div>
 
-    <div class="page-wrap">
-
-      <div class="sidebar">
-        <p>This is the sidebar</p>
-      </div>
+    <div class="page">
 
       <main class="container" role="main">
-        <p>This is the main content area</p>
+        <h1 class="page__header">Page header</h1>
+        <p class="paragraph">This is some main body copy.</p>
+
+        <form class="form">
+
+          <div class="form__row">
+            <label for="field1" class="form__label">Form label</label>
+            <input id="field1" type="text" class="form__field" placeholder="Text field">
+          </div>
+
+          <div class="form__row">
+            <label for="field2" class="form__label">Form label</label>
+            <select class="form__field form__field--select" name="select1" id="field2">
+              <option value="">Option 1</option>
+              <option value="">Option 2</option>
+              <option value="">Option 3</option>
+              <option value="">Option 4</option>
+            </select>
+          </div>
+
+        </form>
       </main>
 
     </div>

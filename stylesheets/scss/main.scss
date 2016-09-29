@@ -13,24 +13,13 @@
   'base/base',
   'base/fonts',
   'base/typography',
-  'base/animations',
   'base/helpers';
 
 // 4. Layout-related sections
 @import
-  'layout/toolbar',
-  'layout/explainer',
-  'layout/sidebar';
+  'layout/toolbar';
 
 // 5. Components
 @import
-  'components/messages',
   'components/buttons',
-  'components/forms',
-  'components/blocks',
-  'components/tags',
-  'components/icons',
-  'components/toolbar-dropdown',
-  'components/pagination',
-  'components/table',
-  'components/scribe-body-editor';
+  'components/forms';

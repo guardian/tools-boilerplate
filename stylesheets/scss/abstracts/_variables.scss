@@ -4,38 +4,79 @@
 
 
 /// Regular font family
-/// @type List
+/// $type List
 $text-font-stack: 'Guardian Agate Sans', Arial, sans-serif !default;
 $title-font-stack: 'Guardian Egyptian Text', Georgia, serif;
 
-/// Copy text color
-/// @type Color
-$text-color: #2b2b29 !default;
+/**
+ * COLOURS
+ *
+ * Wherever a grayscale colour is used, please use one of the many colour
+ * steps defined as variables below.
+ */
 
-// Contrasting text colour
-// @type Color
-$text-contrast: #FFFFFF !default;
+/*
+Grayscale colour palette
+As per: https://docs.google.com/a/guardian.co.uk/file/d/0B6htkhydcF-aV1lUUEhyYTBuRGM/edit
+*/
+$color100Grey: #F6F6F6; // hsl(59,0%,96%)
+$color150Grey: #F1F1F1; // hsl(59,0%,94%)
+$color200Grey: #EDEDED; // hsl(59,0%,92%)
+$color300Grey: #DCDCDC; // hsl(59,0%,86%)
+$color400Grey: #BDBDBD; // hsl(59,0%,74%)
+$color500Grey: #898984; // hsl(59,3%,53%)
+$color600Grey: #767676; // hsl(59,0%,46%)
+$color650Grey: #333333; // hsl(59,0%,20%)
+$color700Grey: #2B2B29; // hsl(59,4%,16%)
 
-/// Main brand color
-/// @type Color
-$brand-color: #005689 !default;
-$brand-color-light: #00b0ce !default;
 
-/// Light grey
-/// @type Color
-$light-grey: #f6f6f6 !default;
+/*
+Generic colours
+*/
+$slightDangerColor: #ca870c;
+$dangerColor: #ed5935;
+$mortalDangerColor: #bc250c;
+$placeholderColor: $color500Grey;
+$cBlueLink: #005689;
+$cBlue: #148ad2;
+$cBlue00: #002c59;
+$cBlue6d: #6d8ea3;
+$cGrey700: #333333;
+$cRedB5: #b51800;
+$cRedE3: #e31f26;
+$cYellow: #ffbc01;
+$cGreen1c: #1c6326;
+$cGreen33: #33a22b;
+$cWhite: #FFFFFF;
 
-/// Medium grey
-/// @type Color
-$mid-grey: #ededed !default;
+/*
+Background colours
+*/
+$bodyBgColor: $color100Grey;
+$greyBgColor: $color200Grey;
+$darkGreyBgColor: $color300Grey;
 
-/// Border grey
-/// @type Color
-$border-grey: #dcdcdc !default;
+// These colours should be abstracted into the colour palette (above) if a
+// pattern emerges later down the line
+$btnBgColor: $color500Grey;
+$btnDisabledBgColor: $color300Grey;
+$btnActiveBgColor: #00ADEE;
+$btnDeepCtaHoverBgColor: #47af37;
+$btnLightBgColor: $color400Grey;
 
-/// Dark grey
-/// @type Color
-$dark-grey: #898984;
+/*
+Border colours
+*/
+$greyBorderColor: $color300Grey;
+$darkGreyBorderColor: $color500Grey;
+
+/*
+Text colours
+*/
+$textColor: $color700Grey;
+$anchorColor: $cBlueLink;
+$brandColor: #004a83;
+$darkBrandColor: #003C6A;
 
 
 // Sizes

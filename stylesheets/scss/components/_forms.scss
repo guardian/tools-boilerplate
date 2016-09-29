@@ -7,7 +7,7 @@
 }
 
 .form-field {
-  background-color: #FFFFFF;
+  background-color: $cWhite;
   padding: 11px;
   border: 1px solid #dcdcdc;
   width: 100%;
@@ -17,7 +17,7 @@
   }
 
   &:focus {
-    border-color: $brand-color-light;
+    border-color: $brandColor;
     outline: none;
   }
 
@@ -39,10 +39,10 @@
   font-size: 13px;
   position: relative;
   display: inline-block;
-  border: 1px solid $border-grey;
+  border: 1px solid $greyBorderColor;
 
   &:after, &:before {
-    color: $c-white;
+    color: $cWhite;
     width: 50%;
     height: 100%;
     position: absolute;
@@ -57,7 +57,7 @@
   &:after {
     content: 'No';
     right: 0;
-    background: $dark-grey;
+    background: $color600Grey;
   }
 
   &:before {
@@ -76,10 +76,10 @@
     transform: translateY(-50%);
     left: 0;
     z-index: 1;
-    background: $c-white;
+    background: $cWhite;
 
     &:hover {
-      background-color: $light-grey;
+      background-color: $color200Grey;
     }
   }
 

@@ -4,28 +4,25 @@
 $toolbarHeight: 50px;
 
 
-.top-toolbar {
-  position: fixed;
-  top: 0;
-  left: 0;
+.toolbar {
   width: 100%;
   height: $toolbarHeight;
-  background-color: #FFFFFF;
+  background-color: $cWhite;
   display: flex;
   justify-content: space-between;
   z-index: 1;
-  border-bottom: 1px solid $border-grey;
+  border-bottom: 1px solid $greyBorderColor;
 }
 
-.top-toolbar__title {
+.toolbar__title {
   width:120px;
   position: relative;
   margin: 0;
   display: flex;
-  color: $text-color;
+  color: $textColor;
 }
 
-.top-toolbar__title__hover-state {
+.toolbar__title__hover-state {
   font-family: $title-font-stack;
   visibility: hidden;
   position: absolute;
@@ -33,64 +30,64 @@ $toolbarHeight: 50px;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: $text-color;
-  color: $text-contrast;
+  background-color: $textColor;
+  color: $cWhite;
   padding: 5px;
 }
 
-.top-toolbar__title:hover .top-toolbar__title__hover-state {
+.toolbar__title:hover .toolbar__title__hover-state {
   visibility:visible;
 }
 
-.top-toolbar__title__hover-state__subtitle {
+.toolbar__title__hover-state__subtitle {
   font-weight:bold;
   font-size: 13px;
   line-height: 18px;
 }
 
-.top-toolbar__title__hover-state__title {
+.toolbar__title__hover-state__title {
   font-weight:bold;
   font-size: 18px;
   line-height: 23px;
 }
 
-.top-toolbar__logo, .top-toolbar__page-icon {
+.toolbar__logo, .toolbar__page-icon {
   display: inline-block;
   text-align: center;
   line-height: 55px;
 }
 
-.top-toolbar__title .top-toolbar__logo {
+.toolbar__title .toolbar__logo {
   flex: 0 0 60px;
-  background: no-repeat center url(/assets/images/icons/explain-logo.svg) $brand-color;
+  background: no-repeat center url(/assets/images/icons/explain-logo.svg) $darkBrandColor;
   background-size: 40px;
 }
 
-.top-toolbar__page-icon {
+.toolbar__page-icon {
   display: inline-block;
   text-align: center;
   line-height: 55px;
 }
 
-.top-toolbar__title .top-toolbar__page-icon {
+.toolbar__title .toolbar__page-icon {
   flex: 0 0 60px;
-  background: no-repeat center $brand-color-light;
+  background: no-repeat center $brandColor;
 }
 
-.top-toolbar__container {
+.toolbar__container {
   display: flex;
   align-items: stretch;
 
   &:not(:last-child) {
-    border-right: 1px solid $border-grey;
+    border-right: 1px solid $greyBorderColor;
   }
 
   &:not(:first-child) {
-    border-left: 1px solid $border-grey;
+    border-left: 1px solid $greyBorderColor;
   }
 }
 
-.top-toolbar__item {
+.toolbar__item {
   padding: 0 15px;
   font-size: 12px;
   font-weight: bold;
@@ -99,7 +96,7 @@ $toolbarHeight: 50px;
   text-align: center;
 
   &:not(:last-child) {
-    border-right: 1px solid $border-grey;
+    border-right: 1px solid $greyBorderColor;
   }
 
   &--no-spacing {
@@ -108,13 +105,18 @@ $toolbarHeight: 50px;
   }
 }
 
-.top-toolbar__button {
+.toolbar__button {
   padding: 0 15px;
   height: 100%;
+  display: flex;
+  align-items: center;
+  // For links
+  text-decoration: none;
+  color: inherit;
 
   &:hover:not(:disabled) {
-    background: darken($mid-grey, 5);
-    box-shadow: inset 0 3px 0 0 $brand-color-light;
+    background: $color200Grey;
+    box-shadow: inset 0 3px 0 0 $brandColor;
   }
 
   &:disabled {
@@ -123,15 +125,15 @@ $toolbarHeight: 50px;
 }
 
 // Abstracted class to relate nav items
-.nav {
+.main-nav {
   flex-grow: 2;
 
   &:not(:last-child) {
-    border-right: 1px solid $border-grey;
+    border-right: 1px solid $greyBorderColor;
   }
 }
 
-.nav__list {
+.main-nav__list {
   text-align: right;
   margin: 0;
   padding: 0;
@@ -167,7 +169,7 @@ $toolbarHeight: 50px;
 }
 
 .presence-names-single {
-  color: $dark-grey;
+  color: $color600Grey;
   border: 1px solid currentColor;
   padding: 5px;
   border-radius: 50%;
