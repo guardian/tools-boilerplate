@@ -435,10 +435,16 @@ h1, h2, h3, h4, h5, h6, .preview__title, .preview__score {
   font-family: "Guardian Egyptian Text", Georgia, serif;
   font-weight: normal;
   font-style: normal;
-  margin: 0 0 20px; }
+  margin: 0 0 10px; }
 
 h1 {
   font-size: 26px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 20px; }
 
 /**
  * Clear inner floats
@@ -738,3 +744,64 @@ button {
     .form-checkbox__input:checked + .form-checkbox__toggle {
       right: 0;
       left: auto; }
+
+/* -------------------------------------- */
+/* Basic table styles                     */
+/* -------------------------------------- */
+.table {
+  width: 100%;
+  margin: 0 auto; }
+  .table__table {
+    width: 100%;
+    text-align: left;
+    background: #FFFFFF; }
+  .table__header {
+    padding: 5px; }
+  .table__header, .table__item {
+    padding: 10px; }
+  .table__item {
+    padding: 0 5px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 18px; }
+  .table__row {
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #EDEDED;
+    border-left: 5px solid #004a83;
+    border-right: 5px solid #004a83; }
+    .table__row:hover {
+      border-left: 5px solid #F1F1F1;
+      border-right: 5px solid #F1F1F1;
+      background-color: #F1F1F1; }
+    .table__row--highlight {
+      background: #b6dfff; }
+  .table__header-row {
+    background-color: #EDEDED;
+    border-left: 5px solid #EDEDED;
+    border-right: 5px solid #EDEDED;
+    color: #2B2B29;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold; }
+  .table__link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #005689;
+    cursor: pointer;
+    padding: 5px 0;
+    display: block;
+    width: 100%; }
+    .table__link:hover {
+      text-decoration: underline; }
+
+/* -------------------------------------- */
+/* Page content styles                    */
+/* -------------------------------------- */
+.page__subheading {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DCDCDC; }
+
+.page__section {
+  margin-bottom: 20px; }
+  .page__section:not(:last-child) {
+    border-bottom: 1px solid #DCDCDC; }
