@@ -1,5 +1,5 @@
 .DS_Store
-/stylesheets/*.css
+assets/stylesheets/*.css
 node_modules
 npm-debug.log
 
