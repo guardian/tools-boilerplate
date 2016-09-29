@@ -1,5 +1,5 @@
 # Tools Boilerplate
-A *very* basic HTML and CSS (with preprocessors) Boilerplate to keep our tools looking consistent and to save time when they all look the same anyway.
+A *very* basic HTML and CSS (with preprocessing coutesy of Sass) Boilerplate to keep our tools looking consistent and to save time when they all look the same anyway.
 
 ## Development
 
@@ -30,7 +30,6 @@ This is *only* intended as a kick-start to your project styles and structure - e
 |   ├── fonts // font files
 |   |── images // all site images
 |   └── stylesheets
-|       |── less // .less files (same structure as .scss
 |       └── scss // .scss files
 |           |── abstracts // non-compiling files (variables, mixins, etc)
 |           |── base // top-level styles (body block, typography, helpers, etc)
@@ -39,3 +38,7 @@ This is *only* intended as a kick-start to your project styles and structure - e
 |           └──  vendor // 3rd party styles
 └── index.html // Basic HTML structure, open for styles preview
 ```
+
+## Coming soon
+
+- Less port
