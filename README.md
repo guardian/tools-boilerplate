@@ -37,4 +37,9 @@ This is *only* intended as a kick-start to your project styles and structure - e
 |           |── layout // Page specific or larger components
 |           └──  vendor // 3rd party styles
 └── index.html // Basic HTML structure, open for styles preview
+
 ```
+
+## Maintenance
+- If you make any style changes/additions, ensure you do it in both Less and Sass
+- This is intended to be very basic, nothing too single product focused
